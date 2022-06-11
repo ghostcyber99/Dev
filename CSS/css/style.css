@@ -1,10 +1,27 @@
-h1{
-    color: darkgoldenrod;
-    font-size: 1.5rem;
+*{
+    margin: 0;
 }
-h2 {
-    color: fuchsia;
+.navbar{
+     color: white;
+     background: blue;
+     font-size: 3rem;
+     height: 100px;
 }
-h3 {
-    color: mediumseagreen;
-} 
+.banner{
+    background: red;
+    min-height: calc(100vh - 100px); 
+}
+
+
+/*css rule */ 
+/*h1 is the selector*
+/*{} is the declearation block */
+/*the whole slector and declearation 
+block is called the css rule*/ 
+/*within the declearation block 
+is the property, within the property 
+you will the value*/ 
+/*use # for id */
+/*use . for class/
+/*div  */ 
+/*rem do not depend on the parent we are depending on a rule which would be html */ 
