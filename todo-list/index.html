@@ -1,32 +1,48 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />">
+    <title>To Do List</title>
 </head>
-<body background="./images/todobackground2.jpg">
-    <h1>Things to do</h1>
-    <h3>
-        <a href="index.html">Home</a>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="Completed.html">Completed</a>
-    </h3>
+<body>
+    <h1 class="title">
+        To Do List App
+    </h1>
 
-    <form action=""></form>
-    <label for="Task1">1</label>
-    <input type="text" name="Task1" id="Task1" value="Task1">
-    <input type="submit" name="Done" id="Task1">
-    <br/>
-    <br/>
-    <label for="Task2">2</label>
-    <input type="text" name="Task2" id="Task2" value="Task2">
-    <input type="submit" name="Done" id="Task2">
-    <br />
-    <br />
-    <label for="Task3">3</label>
-    <input type="text" name="Task3" id="Task3" value="Task3">
-    <input type="submit" name="Done" id="Task3">
+    <div class="todo-list">
+        <div class="list-head">
+            <input type="text" class="enter-list">
+            <button class="add-list"> Add </button>
+        </div>
+    </div>
+
+    <main>
+        <section class="task-list">
+                <h2 class="sec-title">Tasks</h2>
+                <div id="tasks">
+                    <div class="task">
+                        <div class="content">
+                            <input 
+                            type="text"
+                            class="text"
+                            readonly
+                            /> 
+                        </div>
+                        <div class="actions">
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+    </main>
+
+    <script src="./todo.js"></script>
 </body>
 </html>

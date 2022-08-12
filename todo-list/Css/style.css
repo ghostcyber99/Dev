@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background: url(./images/todobackground2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+.title{
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    margin: 30px;
+}
+.todo-list{
+    width: 450px;
+    padding: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.list-head{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 20px;
+}
+.enter-list{
+    height: 33px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid;
+    font-size: 16px;
+    outline: none;
+}
+
+.add-task{
+    flex: 1 1 0%;
+    padding: 0.4rem;
+    margin-right: 0.5px;
+}
+.add-list{
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(8, 6, 133);
+    color: #fff;
+    padding: 0.4rem;
+    margin-right: 0.5px;
+    cursor: pointer;
+    font-size: 16px;
+    opacity: .6;
+    pointer-events: none;
+}
+.add-list.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.task{
+    width: 100%;
+    margin-top: 30px;
+}
+.item{
+    padding: 10px; 
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.item-btn i{
+    font-size: i8px;
+    cursor: pointer;
+}
+.sec-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.task-list{
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    margin: 30px;
+    width: 450px;
+    padding: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.task{
+    display: flex;
+    justify-content: center;
+}
+.text{
+    height: 33px;
+    width: 313px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid;
+    font-size: 16px;
+    outline: none;
+}
+.delete {
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(8, 6, 133);
+    color: #fff;
+    padding: 0.4rem;
+    margin-right: 0.5px;
+    cursor: pointer;
+    font-size: 16px;
+    opacity: .6;
+    pointer-events: none;
+}
+.edit {
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(8, 6, 133);
+    color: #fff;
+    padding: 0.4rem;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    opacity: .6;
+    pointer-events: none;
+}
+.actions{
+    display: flex;
+    padding: 0.3rem;
+}
+
+
