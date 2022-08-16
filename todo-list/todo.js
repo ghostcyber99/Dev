@@ -2,17 +2,14 @@
 let tasks = document.querySelector('#tasks')
 
 document.querySelector('.add-list').addEventListener('click', function(){
-    console.log('this is a test');
-    const input = document.querySelector('.enter-list').value;
-    console.log(input);
+    let input = document.querySelector('.enter-list').value;
 
-    if(input !== 0){
-        console.log(input);
+    if(input.trim()){
         let newItem = document.createElement('div');
-        newItem.classList.add(input);
         newItem.innerHTML = `<div class="task">
                         <div class="content">
                             <input 
+                            value='${input}'
                             type="text"
                             class="text"
                             readonly
@@ -23,8 +20,8 @@ document.querySelector('.add-list').addEventListener('click', function(){
                             <button class="delete">Delete</button>
                         </div>
                     </div>`
-        tasks.appenchild(newItem);
-        input.value = '';
+        tasks.appendChild(newItem);
+        input = '';
     } else{
         alert('Please enter a task')
     }
