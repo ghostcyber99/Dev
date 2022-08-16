@@ -6,9 +6,10 @@ document.querySelector('.add-list').addEventListener('click', function(){
     const input = document.querySelector('.enter-list').value;
     console.log(input);
 
-    if(input.value !== 0){
+    if(input !== 0){
+        console.log(input);
         let newItem = document.createElement('div');
-        newItem.classList.add('task');
+        newItem.classList.add(input);
         newItem.innerHTML = `<div class="task">
                         <div class="content">
                             <input 
