@@ -1,13 +1,15 @@
-let input = document.querySelector('.enter-list');
-let addBtn = document.querySelector('.add-list');
+'use strict'
 let tasks = document.querySelector('#tasks')
 
-//add new task to list 
-addBtn = addEventListener('click', function(){
-    if(input.value.trim() !== 0){
+document.querySelector('.add-list').addEventListener('click', function(){
+    console.log('this is a test');
+    const input = document.querySelector('.enter-list').value;
+    console.log(input);
+
+    if(input.value !== 0){
         let newItem = document.createElement('div');
         newItem.classList.add('task');
-        newItem.innerHTML = `   <div class="task">
+        newItem.innerHTML = `<div class="task">
                         <div class="content">
                             <input 
                             type="text"
@@ -18,12 +20,11 @@ addBtn = addEventListener('click', function(){
                         <div class="actions">
                             <button class="edit">Edit</button>
                             <button class="delete">Delete</button>
-                        </div>`
-
-        tasks.appendChild(newItem);
+                        </div>
+                    </div>`
+        tasks.appenchild(newItem);
         input.value = '';
-    }else {
+    } else{
         alert('Please enter a task')
     }
 })
-
