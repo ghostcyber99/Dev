@@ -27,9 +27,3 @@ addBtn = addEventListener('click', function(){
     }
 })
 
-//delete item from list 
-tasks.addEventListener('click', function(e){
-    if(e.target.classList.contains('delete')){
-        e.target.parentElement.parentElement.remove();
-    }
-})
