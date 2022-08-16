@@ -57,31 +57,10 @@ body{
     margin-right: 0.5px;
     cursor: pointer;
     font-size: 16px;
-    opacity: .6;
-    pointer-events: none;
 }
 .add-list.active{
     opacity: 1;
     pointer-events: all;
-}
-
-.task{
-    width: 100%;
-    margin-top: 30px;
-}
-.item{
-    padding: 10px; 
-    border-radius: 5px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
-}
-.item-btn i{
-    font-size: i8px;
-    cursor: pointer;
 }
 .sec-title{
     display: flex;
@@ -101,6 +80,8 @@ body{
 .task{
     display: flex;
     justify-content: center;
+    width: 100%;
+    margin-top: 30px;
 }
 .text{
     height: 33px;
@@ -115,13 +96,11 @@ body{
     border: none;
     border-radius: 5px;
     background-color: rgba(8, 6, 133);
-    color: #fff;
+    color: crimson;
     padding: 0.4rem;
     margin-right: 0.5px;
-    cursor: pointer;
     font-size: 16px;
-    opacity: .6;
-    pointer-events: none;
+    cursor: pointer;
 }
 .edit {
     border: none;
@@ -133,8 +112,6 @@ body{
     margin-left: 10px;
     cursor: pointer;
     font-size: 16px;
-    opacity: .6;
-    pointer-events: none;
 }
 .actions{
     display: flex;
