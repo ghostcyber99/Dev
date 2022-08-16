@@ -3,7 +3,7 @@ let addBtn = document.querySelector('.add-list');
 let tasks = document.querySelector('#tasks')
 
 //add new task to list 
-addBtn = addEventListener('click', () => {
+addBtn = addEventListener('click', function(){
     if(input.value.trim() !== 0){
         let newItem = document.createElement('div');
         newItem.classList.add('task');

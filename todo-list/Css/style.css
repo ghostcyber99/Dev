@@ -86,11 +86,11 @@ body{
 .text{
     height: 33px;
     width: 313px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     padding: 10px;
-    border: 1px solid;
+    /* border: 1px solid; */
     font-size: 16px;
-    outline: none;
+    /* outline: none; */
 }
 .delete {
     border: none;
