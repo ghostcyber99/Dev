@@ -34,7 +34,15 @@ document.querySelector('.add-list').addEventListener('click', function(){
     //saving the task to local storage
     document.querySelector('.save').addEventListener('click', function(){
         console.log('this is a test');
+        localStorage.setItem('tasks', `test`);
+        updateUiTask();
     })
+
+    function updateUiTask(){
+        let values = [], keys = Object.keys(localStorage), i = keys.length;
+        while(i--) {values.push(localStorage.getItem(keys[i]));}
+        document.getElementById('tasks').textContent = values;
+    }
 
     //deleting the tasking 
     document.querySelector('.delete').addEventListener('click', function(){
